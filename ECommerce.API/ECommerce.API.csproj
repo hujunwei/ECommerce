@@ -10,6 +10,12 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.ServiceFabric.AspNetCore.Kestrel" Version="3.2.176" />
+    <PackageReference Include="Microsoft.ServiceFabric.Services.Remoting" Version="3.2.176" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ecommerce.ProductCatalog.Model\Ecommerce.ProductCatalog.Model.csproj" />
   </ItemGroup>
 
 
