@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.ServiceFabric.Data;
+using System;
 
 namespace Ecommerce.ProductCatalog.Model
 {
@@ -8,6 +9,6 @@ namespace Ecommerce.ProductCatalog.Model
         public string Name { get; set; }
         public string Description { get; set; }
         public double Price { get; set; }
-        public int Availability { get; set; } 
+        public int Availability { get; set; }
     }
 }

@@ -23,6 +23,11 @@ namespace ECommerce.ProductCatalog
             : base(context)
         { }
 
+        public async Task<Product> GetProductAsync(Guid productId)
+        {
+            return await _repo.GetProduct(productId);
+        }
+
         public async Task AddProductAsync(Product product)
         {
             await _repo.AddProduct(product);
