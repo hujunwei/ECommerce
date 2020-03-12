@@ -53,6 +53,14 @@ namespace Ecommerce.CheckoutService
                 result.Products.Add(checkoutProduct);
             }
 
+            //generate total price
+            result.TotalPrice = result.Products.Sum(p => p.Price * p.Quantity);
+
+            //clear user basket
+            await userActor.ClearBasket();
+
+            await AddToHistoryAsync(result);
+
             return result;
         }
 
